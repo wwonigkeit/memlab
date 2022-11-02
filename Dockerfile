@@ -52,7 +52,7 @@ RUN apt-get install -y libappindicator1 fonts-liberation \
 RUN wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && dpkg -i google-chrome-stable_current_amd64.deb
 
-RUN rm -rf dpkg -i google-chrome-stable_current_amd64.deb
+RUN rm -rf google-chrome-stable_current_amd64.deb
 
 # DON'T CHANGE BELOW 
 COPY --from=build /application /bin/application
